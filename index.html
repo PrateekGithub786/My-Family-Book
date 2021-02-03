@@ -16,6 +16,8 @@
 <body style="text-align: center;">
 
     <h1> My Family Book </h1> <img src="The family book.jpg" id="img">
+    <br>
+    <h3 id="name"></h3>
     <button id="button" type="button" onclick="nextslide()">Next</button>
 
     <style type="text/css">
@@ -41,26 +43,26 @@
             "Father.jpg",
             "Mother.jpg",
             "Lucky.jpg",
-            "Annu.jpg",
+            "Annu.jpg"
         ];
 
         var names = [
             "Pradeep Kumar",
             "Arti Kumari",
             "Prateek Dahiya",
-            "Preeti Dahiya",
+            "Preeti Dahiya"
         ];
 
         var i = 0
 
         function nextslide() {
 
-            if (i == 9) {
+            if (i == 4) {
                 i = 0;
-            }
+            };
             document.getElementById("img").src = images[i];
-            i++;
-            document.getElementById("names").src = images[i];
+
+            document.getElementById("name").innerHTML = names[i];
             i++;
         };
     </script>
