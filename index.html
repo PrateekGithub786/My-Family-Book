@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family book</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body style="text-align: center;">
+
+    <h1> My Family Book </h1> <img src="The family book.jpg" id="img">
+    <button id="button" type="button" onclick="nextslide()">Next</button>
+
+    <style type="text/css">
+        #img {
+            float: left;
+            width: 200px;
+            margin-left: 575px;
+        }
+
+        #button {
+            background-color: #4CAF50;
+            font-size: 16px;
+            height: 50px;
+            width: 100px;
+            margin-top: 250px;
+            margin-right: 300px;
+
+        }
+    </style>
+
+    <script>
+        var images = [
+            "Father.jpg",
+            "Mother.jpg",
+            "Lucky.jpg",
+            "Annu.jpg",
+        ];
+
+        var names = [
+            "Pradeep Kumar",
+            "Arti Kumari",
+            "Prateek Dahiya",
+            "Preeti Dahiya",
+        ];
+
+        var i = 0
+
+        function nextslide() {
+
+            if (i == 9) {
+                i = 0;
+            }
+            document.getElementById("img").src = images[i];
+            i++;
+            document.getElementById("names").src = images[i];
+            i++;
+        };
+    </script>
+
+</body>
+
+</html>
